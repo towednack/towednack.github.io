@@ -1,0 +1,55 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+    <!--<style>
+        @import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+
+        * {
+            cursor: cell;
+        }
+        body {
+            background: url(Moonlit_Landscape_with_a_View_of_the_New_Amstel_River_and_Castle_Kostverloren_by_Aert_van_der_Neer.JPG);
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            background-position: center;
+            background-color: black;
+        }
+
+        .menu-options {
+            margin-top: 250px;
+            margin-left: 250px;
+        }
+        .menu-options ul {
+            list-style: none;
+        }
+        .menu-options ul li {
+            display: block;
+            font-family: 'Uchen', serif;
+            font-size: 50px;
+            font-weight: 500;
+            margin-bottom: 70px;
+            color: #fff;
+        }
+        .menu-options ul li:hover {
+            color: #000;
+            background-color: #fff;
+        }
+    </style>-->
+</head>
+<script>
+    function vibrate() {
+        navigator.vibrate([50,30,50,30,50]); 
+    }
+</script>
+<body>
+    <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+    <audio id="player" autoplay loop>
+        <source src="532301__widgetstudios__night-woods.wav" type="audio/wav">
+    </audio>
+    <div class="menu-options">
+        <ul>
+            <li onclick="vibrate()"><span class="option">Start</span></li>
+            <li onclick="vibrate()"><span class="option">Options</span></li>
+            <li onclick="vibrate()"><span class="option">About</span></li>
+        </ul>
+    </div>
+</body>
