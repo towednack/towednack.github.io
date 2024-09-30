@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The H Page.</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body onload="alertScreenSize()">
+	<header>
+		<nav>
+			<ul>
+				<li><p>H</p></li>
+				<li><a href="#" class="navButtonCurrentPage">Home</a></li>
+				<li><a href="archives/index.html">Archives</a></li>
+				<li><a href="gallery/index.html">Gallery</a></li>
+				<li><a href="form/index.html">Contact</a></li>
+			</ul>
+			<p class="headerCopyright">© A Hollenland Production, 1899.</p>
+		</nav>
+	</header>
+	<main>
+		<section class="topSection">
+			<h1>Welcome to the <span class="hTitle">H</span> page.</h1>
+			<p>A single awesome page.</p>
+		</section>
+		<section class="blogPost">
+			<img class="blogPostFavorite" id="blogPostFavorite1" onclick="blogPostFavorite(postId=1, postTitle='Instructional Post')" src="media/blogPostFavoriteEmpty.png" alt="Favorite this article.">
+			<h2 class="blogPostTitle"><a href="post/here-is-a-blog-post.html" target="_blank">Here is a blog post.</a></h2>
+			<div class="blogTitleButtons"><h2><a href="#" onclick="notYetSupportedFeature()">Comments</a><span class="blogTitleDivisor"> & </span><a href="#" onclick="notYetSupportedFeature()">Download for offline reading</a></h2></div>
+			<hr>
+			<p>Notice that you can click on the title and it will open up the content of this post on a new tab. Alternatively, you can also click on "Comments" to read the reactions to this post. There is also an option to download a PDF version of the post's page clicking on the button 'Download for offline reading'. After signing up via the 'User' page, there is also an option to favorite this article by clicking on the star next to the title, so this specific post gets easily accessible on the menu.</p>
+		</section>
+		<section class="blogPost">
+			<img class="blogPostFavorite" id="blogPostFavorite2" onclick="blogPostFavorite(postId=2, postTitle='Another Example Post')" src="media/blogPostFavoriteEmpty.png" alt="Favorite this article.">
+			<h2 class="blogPostTitle"><a href="post/here-is-another-blog-post.html" target="_blank">Here is another blog post.</a></h2>
+			<div class="blogTitleButtons"><h2><a href="#" onclick="notYetSupportedFeature()">Comments</a><span class="blogTitleDivisor"> & </span><a href="#" onclick="notYetSupportedFeature()">Download for offline reading</a></h2></div>
+			<hr>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus facere iste libero fugiat, error debitis quo recusandae. Ad placeat saepe incidunt iste. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis quasi repellat ut, dolorem totam consequuntur labore dolore ducimus veniam alias vero nam eaque dolor autem, porro illum laborum in.</p>
+		</section>
+		<table class="websiteStats">
+			<th>Website Statistics</th>
+			<tr>
+				<td>Visitors:</td>
+				<td>Country:</td>
+				<td>Bot?</td>
+			</tr>
+			<tr>
+				<td>31</td>
+				<td>Brazil</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>14</td>
+				<td>Argentina</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Mexico</td>
+				<td>0</td>
+			</tr>
+			<tr style="background-color: #555;">
+				<td>49</td>
+				<td>Total</td>
+				<td>8</td>
+			</tr>
+		</table>
+		
+	</main>
+</body>
+</html>

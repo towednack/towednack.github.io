@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+	<script src="script.js"></script>
+    <title>Contact the H.</title>
+</head>
+<body>
+    <header>
+		<nav>
+			<ul>
+				<li><p>H</p></li>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../archives/index.html">Archives</a></li>
+				<li><a href="../gallery/index.html">Gallery</a></li>
+				<li><a href="#" class="navButtonCurrentPage">Contact</a></li>
+			</ul>
+			<p class="headerCopyright">© A Hollenland Production, 1899.</p>
+		</nav>
+	</header>
+    <div class="formContainer">
+		<h1>Contact the <span class="hTitle">H</span>.</h1>
+        <form class="contactForm" action="#" method="post">
+			<h3>Send a virtual letter to Sir Hollenland.</h3>
+			<div class="formGroup">
+				<label for="name">Type your name:</label>
+				<input type="text" placeholder="Sir Hollenland." nome="nome" required>
+			</div>
+			<br>
+			<div class="formGroup">
+				<label for="email">Type your email:</label>
+				<input type="email" placeholder="sir@hollenland.net" email="email">
+			</div>
+			<br>
+			<div class="formGroup">
+				<label for="message">Type your letter:</label>
+				<br>
+				<input type="text" placeholder="Dear Sir Hollenland..." size="40%" message="message" required>
+			</div>
+			<br>
+			<div class="formGroup">
+				<label for="date">What day is it you are writing this letter?</label>
+				<input type="date" placeholder="" date="date">
+			</div>
+			<br>
+			<button type="submit">Send letter.</button>
+        </form>
+
+    </div>
+</body>
+</html>
