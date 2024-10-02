@@ -3,6 +3,9 @@ body {
 	background-image: url(media/backgroundImage.jpg);
 	background-repeat: no-repeat;
 }
+.responsive1072px{
+	display: none;
+}		
 
 header {
 	margin-top: -10px;
@@ -41,6 +44,7 @@ header ul li p:hover {
 	color: #00b94d;
 }
 header ul li a {
+	font-size: 20px;
 	padding: 3px;
 	margin: 0 3px 0 6px;
 	color: #fff;
@@ -222,7 +226,7 @@ main {
 .contactBlock {
 	margin: auto;
 	margin-top: 20px;
-	width: 10%;
+	width: 30%;
 	text-align: center;
 	padding: 15px;
 	display: block;
@@ -313,4 +317,34 @@ footer {
 }
 .formGroup label {
 	color: #ffffff;
+}
+
+/*  Media Queries  */
+
+@media only screen and (max-width: 1072px) {
+	header nav ul li img {
+		display: none;
+	}
+
+	header nav ul li p {
+		display: block;
+		margin: 20px;
+		text-align: center;
+	}
+
+	.responsive1072px {
+		display: block;
+	}
+
+	img {
+		display: none;
+	}
+
+	.headerCopyright {
+		display: none;
+	}
+
+	.contactBlock {
+		width: 50%;
+	}
 }
