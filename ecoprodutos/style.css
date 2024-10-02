@@ -322,8 +322,16 @@ footer {
 /*  Media Queries  */
 
 @media only screen and (max-width: 1072px) {
+	header {
+		text-align: center;
+	}
+
 	header nav ul li img {
 		display: none;
+	}
+
+	header ul {
+		margin-top: -20px;
 	}
 
 	header nav ul li p {
