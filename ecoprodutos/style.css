@@ -1,6 +1,7 @@
 body {
-	background-color: #000;
+	background-color: rgb(0, 0, 0);
 	background-image: url(media/backgroundImage.jpg);
+	background-repeat: no-repeat;
 }
 
 header {
@@ -21,10 +22,9 @@ header ul li {
 header ul li img {
 	width: 40px;
 	margin-top: 5px;
-	filter: invert(1);
 }
 header ul li img:hover {
-	filter:invert(0.8)
+	filter: brightness(1.5);
 }
 header ul li p {
 	margin: 2px 20px 2px 0;
@@ -39,6 +39,15 @@ header ul li p:hover {
 	color: #00b94d;
 }
 header ul li a {
+	padding: 3px;
+	margin: 0 3px 0 6px;
+	color: #fff;
+	border: 3px outset #855700;
+	background-color: #855700;
+	text-decoration: none;
+}
+.menuButtonReplica {
+	font-size: 10px;
 	padding: 3px;
 	margin: 0 3px 0 6px;
 	color: #fff;
@@ -91,17 +100,30 @@ main {
 .hTitle {
 	padding: 2px 15px;
 	color: #ffffff;
-	background-color: #008537;
-	border-radius: 20px;
+	background-color: #855700;
+	border: 3px solid #037e18;
+	border-radius: 5px;
 	font-weight: 800;
 }
 .hTitle:hover {
-	background-color: #009e42;
+	background-color: #5f3e00;
 }
 .topSection p {
 	margin: auto;
 	text-align: center;
-	color: #ddd;
+	color: #aaa;
+}
+
+.hotPosts {
+	display: inline-block;
+	margin: 4px 4px 4px 15px;
+	color: #fff;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: #005e27;
+}
+.hotPosts p {
+	margin: 0;
 }
 
 .blogPost {
@@ -153,18 +175,69 @@ main {
 	margin: 10px 15px 10px 60px;
 }
 .blogPost hr {
-	margin: 2px 10px;
+	margin: 10px 10px;
 }
-.blogPost .sideImages img {
+.sideImages {
+	position: absolute;
+	display: inline-block;
+	height: 100%;
+	right: 0;
+	bottom: -10%;
+}
+.sideImages img {
 	border: 2px solid #00973f;
 	height: 70%;
-	margin: 15px;
-	position: absolute;
-	bottom: 0;
-	right: 0;
+	margin: 25px;
+}
+.sideImages ul {
+	list-style: none;
+}
+.sideImages ul li {
+	display: inline-block;
+}
+.listaProdutos {
+	margin-left: 60px;
+	color: #fff;
+}
+.listaProdutos p {
+	margin-left: 0;
+	max-width: 25%;
 }
 
+.infoBlocks {
+	text-align: center;
+	padding: 10px;
+}
+
+.recentPosts {
+	margin: 5px 20px 5px 5px;
+	color: #fff;
+	display: inline-block;
+	background-color: #1d1d1d;
+	border: 2px solid #aaa;
+	border-radius: 15px;
+}
+.recentPosts h3, li {
+	font-weight: 1000;
+}
+.recentPosts ul {
+	list-style: none;
+	margin: 5px 5px 5px -30px;
+}
+.recentPosts ul li {
+	padding: 5px;
+	margin: 5px;
+	background-color: #0e0e0e;
+}
+.recentPosts ul li a {
+	color: #ddd;
+	text-decoration: none;
+}
+.recentPosts p {
+	font-weight: 100;
+}
 .websiteStats {
+	display: inline-block;
 	color: #ccc;
 	margin: auto;
 	margin-top: 20px;
@@ -172,7 +245,7 @@ main {
 	padding: 7px;
 	border: 2px solid #ccc;
 	border-radius: 8px;
-	background-color: #002502;
+	background-color: #1d1d1d;
 }
 .websiteStats th {
 	font-size: 20px;
