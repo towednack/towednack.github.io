@@ -90,7 +90,7 @@ main {
 }
 .hTitle {
 	padding: 2px 15px;
-	color: #ddd;
+	color: #ffffff;
 	background-color: #008537;
 	border-radius: 20px;
 	font-weight: 800;
@@ -195,20 +195,20 @@ footer {
 	text-align: center;
 }
 .contactForm {
-	background-color: #222;
+	background-color: #005e27;
 	padding: 15px;
-	border: 3px outset #000;
+	border: 5px outset #008d3b;
 }
 .formContainer h1 {
 	user-select: none;
-	color: #ddd;
+	color: #ffffff;
 }
 .formContainer h3 {
 	display: inline-block;
 	padding: 5px;
 	margin: 0 0 30px 0;
-	color: #ddd;
-	background-color: #333;
+	color: #ffffff;
+	background-color: #003607;
 }
 .formContainer button {
 	color: #fff;
@@ -218,5 +218,5 @@ footer {
 
 }
 .formGroup label {
-	color: #ddd;
+	color: #ffffff;
 }

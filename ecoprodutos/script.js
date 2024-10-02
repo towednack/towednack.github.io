@@ -1,18 +1,18 @@
 function alertScreenSize(){
-    alert("Welcome to the H page. This website is best viewed on a 3:4 monitor.")
+    alert("Bem vindo à EcoProdutos. Este site é melhor visualizado em um monitor 3:4.")
 }
 
 function blogPostFavorite(postId, postTitle){
     if (document.getElementById("blogPostFavorite" + postId).src.includes("media/blogPostFavorite.png")) {
         document.getElementById("blogPostFavorite" + postId).src = "media/blogPostFavoriteEmpty.png"
-        alert("The post [" + postTitle + "] has been removed from your favorites.");
+        alert("O post [" + postTitle + "] foi removido dos seus favoritos.");
     }
     else {
         document.getElementById("blogPostFavorite" + postId).src = "media/blogPostFavorite.png"
-        alert("The post [" + postTitle + "] has been added to your favorites. To find it later, head on to 'Favorites' on your user page.");
+        alert("O post [" + postTitle + "] foi adicionado aos seus favoritos. Para encontrá-lo mais tarde, vá para ‘Favoritos’ na sua página de usuário.");
     }
 }
 
 function notYetSupportedFeature(){
-    alert("This feature is not yet supported on the website! Sorry for the inconvenience.")
+    alert("Este recurso ainda não é compatível com o site! Desculpe pela inconveniência.")
 }
