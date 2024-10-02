@@ -5,10 +5,12 @@ body {
 }
 
 header {
+	margin-top: -10px;
 	background-color: #005c2e;
 	user-select: none;
 	border: 2px solid #9e5a00;
-	border-radius: 10px;
+	border-top: 0;
+	border-radius: 0 0 10px 10px;
 	padding: 1px;
 }
 header ul {
@@ -83,6 +85,7 @@ main {
 	background-color: rgba(44, 43, 1, 0.678);
 	border-radius: 10px;
 	margin: 20px 40px 0 40px;
+	padding: 20px;
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
@@ -97,6 +100,13 @@ main {
 	color: #ddd;
 	font-size: 50px;
 }
+.topSection img {
+	width: 50px;
+	display: block;
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: -20px;
+} 
 .hTitle {
 	padding: 2px 15px;
 	color: #ffffff;
@@ -209,6 +219,17 @@ main {
 	padding: 10px;
 }
 
+.contactBlock {
+	margin: auto;
+	margin-top: 20px;
+	width: 10%;
+	text-align: center;
+	padding: 15px;
+	display: block;
+	color: #fff;
+	background-color: #0e3116;
+	border-radius: 15px;
+}
 .recentPosts {
 	margin: 5px 20px 5px 5px;
 	color: #fff;
