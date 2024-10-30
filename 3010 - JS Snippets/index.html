@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Snippets</title>
+    <link id="stylesheet" rel="stylesheet" href="styleDark.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="ulMain">
+                <li>
+                    <div class="walkingDot"></div>
+                    <div class="walkingDot2"></div>
+                    <div class="walkingDot3"></div>
+                    <div class="walkingDot4"></div>
+                    <div class="walkingDot5"></div> JS Code Snippets.</li>
+            </ul>
+            <ul class="switchStylesheet">
+                <li><button id="switchStylesheet" onclick="switchStylesheet()">Switch page to bright colors.</button><br><p style="color:#fff;margin:3px;"></p></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="jsSnippets">
+
+        <div class="codeSnippet isItOdd">
+            <h3>Verificar se um número é par ou ímpar.</h3>
+            <button class="testButton" onclick="isItOdd()">Testar</button>
+        </div>
+
+        <div class="codeSnippet isItUnderage">
+            <h3>Verificar se alguém é menor ou maior de idade.</h3>
+            <button class="testButton" onclick="isItUnderage()">Testar</button>
+        </div>
+
+        <div class="codeSnippet miniCalculator">
+            <h3>Mini Calculadora.</h3>
+            <p>Suporta as 4 operações simples.</p>
+            <button class="testButton" onclick="miniCalculator()">Testar</button>
+        </div>
+
+        <div class="codeSnippet showArrayElement">
+            <h3>Mostrar elemento de um array.</h3>
+            <p>Lista do snippet: <br><span id="showArrayElementList">[ ]</span></p>
+            <button class="testButton" onclick="showArrayElement()">Testar</button>
+        </div>
+
+        <div class="codeSnippet countFromNumber">
+            <h3>Contar a partir de um número.</h3>
+            <div class="switchOptionBox">
+                <p>[Crescente] 
+                    <label class="switch">
+                        <input id="switchIncreaseDecrease" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                [Decrescente]</p>
+            </div>
+            <br>
+            <button class="testButton" onclick="countFromNumber()">Testar</button>
+        </div>
+
+        <div class="codeSnippet sum2Numbers">
+            <h3>Somar dois números.</h3>
+            <p><input id="sum2NumbersNum1" type="number" placeholder="1"> + <input id="sum2NumbersNum2" type="number" placeholder="2"></p>
+            <br>
+            <button class="testButton" onclick="sum2Numbers()">Testar</button>
+        </div>
+
+        <div class="codeSnippet average3Numbers">
+            <h3>Média de 3 números.</h3>
+            <div class="switchOptionBox">
+                <p>[Aritmética] 
+                    <label class="switch">
+                        <input id="switchWeighted" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                [Ponderada]</p>
+            </div>
+            <button class="testButton" onclick="average3Numbers()">Testar</button>
+        </div>
+
+        <div class="codeSnippet isItNegative">
+            <h3>Verificar se um número é negativo.</h3>
+            <button class="testButton" onclick="isItNegative()">Testar</button>
+        </div>
+
+        <div class="codeSnippet isItPrime">
+            <h3>Verificar se um número é primo.</h3>
+            <button class="testButton" onclick="isItPrime()">Testar</button>
+        </div>
+
+        <div class="codeSnippet repeatMessage">
+            <h3>Repetir mensagem.</h3>
+            <label for="messageOutput">O resultado substituirá o input.</label>
+            <br>
+            <input id="inputText" type="text" name="messageOutput" placeholder="Insira o texto aqui.">
+            <label for="switchRepeatMessageLineBreak">Espaço entre mensagens?</label>
+            <input class="switchRepeatMessageSpace" id="switchRepeatMessageSpace" type="checkbox">
+            <br>
+            <button class="testButton" onclick="repeatMessage()">Testar</button>
+        </div>
+
+        <div class="codeSnippet celsiusToFahrenheit">
+            <h3>Converter Celsius para Fahrenheit.</h3>
+            <p>Tipo de input:</p>
+            <div class="switchOptionBox">
+                <p>[Celsius] 
+                    <label class="switch">
+                        <input id="switchCelsiusFahrenheit" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                [Fahrenheit]</p>
+            </div>
+            <br>
+            <button class="testButton" onclick="celsiusToFahrenheit()">Testar</button>
+        </div>
+
+        <div class="codeSnippet multiplicationTable">
+            <h3>Gerador de tabuada simples.</h3>
+            <label>Insira o número a ser multiplicado abaixo.</label>
+            <br>
+            <input class="inputMultiplier" id="inputMultiplier" type="number" placeholder="Número.">
+            <p>O resultado também pode ser visualizado no console.</p>
+            <br>
+            <button class="testButton" onclick="multiplicationTable()">Testar</button>
+        </div>
+
+        <div class="codeSnippet countStringCharacters">
+            <h3>Contar caracteres em uma palavra.</h3>
+            <input id="inputWord" type="text" placeholder="Palavra.">
+            <br><br>
+            <button class="testButton" onclick="countStringCharacters()">Testar</button>
+        </div>
+
+        <div class="codeSnippet isItPositive">
+            <h3>Verificar se um número é positivo.</h3>
+            <button class="testButton" onclick="isItPositive()">Testar</button>
+        </div>
+
+        <div class="codeSnippet showNamesArray">
+            <h3>Mostrar um array de nomes.</h3>
+            <input id="inputNome" type="text" placeholder="Nome.">
+            <button class="showNamesArrayAdd" onclick="showNamesArrayAdd()">+</button>
+            <p>Após digitar um nome, clique em "+" para adicioná-lo à lista.</p>
+            <br>
+            <button class="testButton" onclick="showNamesArray()">Testar</button>
+        </div>
+    </div>
+    <footer>
+        <p class="copyrightFooter">© Hollenland, 1899.</p>
+    </footer>
+</body>
+</html>
